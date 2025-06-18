@@ -1,0 +1,28 @@
+--cpu Cortex-M0+
+"g030_display\startup_stm32g030xx.o"
+"g030_display\led_seg_display.o"
+"g030_display\main.o"
+"g030_display\gpio.o"
+"g030_display\stm32g0xx_it.o"
+"g030_display\stm32g0xx_hal_msp.o"
+"g030_display\stm32g0xx_hal_tim.o"
+"g030_display\stm32g0xx_hal_tim_ex.o"
+"g030_display\stm32g0xx_hal_rcc.o"
+"g030_display\stm32g0xx_hal_rcc_ex.o"
+"g030_display\stm32g0xx_ll_rcc.o"
+"g030_display\stm32g0xx_hal_flash.o"
+"g030_display\stm32g0xx_hal_flash_ex.o"
+"g030_display\stm32g0xx_hal_gpio.o"
+"g030_display\stm32g0xx_hal_dma.o"
+"g030_display\stm32g0xx_hal_dma_ex.o"
+"g030_display\stm32g0xx_ll_dma.o"
+"g030_display\stm32g0xx_hal_pwr.o"
+"g030_display\stm32g0xx_hal_pwr_ex.o"
+"g030_display\stm32g0xx_hal_cortex.o"
+"g030_display\stm32g0xx_hal.o"
+"g030_display\stm32g0xx_hal_exti.o"
+"g030_display\system_stm32g0xx.o"
+--strict --scatter "g030_display\g030_display.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "g030_display.map" -o g030_display\g030_display.axf
